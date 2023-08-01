@@ -1,4 +1,5 @@
 # Functions
+
 ```
 class Square {
     constructor(length: number) {
@@ -12,8 +13,8 @@ In the function quadrupleSquareSize we abstract the calculations of scaling the 
     quadrupleSquareSize(square: Square): Square {
         const isValidSquare = this.checkSquareHasArea(square);
 
-        if (isValidSquare) { // Blocks within if, else, and while statements should be one line long.
-            return this.scaleSquareSize(4, square); // That line should be a function call
+        if (isValidSquare) {
+            return this.scaleSquareSize(4, square); //
         } else {
             return new Square(0);
         }
@@ -29,13 +30,15 @@ Notice how these functions are small and doing one thing. They also have descrip
         return square.length > 0;
     }
 
-    scaleSquareSize(multiplier: number, square: Square): Square { // The less arguments in a function, the better. Any more than three needs special justification.
+    scaleSquareSize(multiplier: number, square: Square): Square {
         return new Square(square.length * multiplier);
     }
 }
 ```
+## Function Arguments
+The less arguments in a function, the better. Any more than three needs special justification.
 
-Don't repeat yourself!
+## Don't repeat yourself!
 Here we are extending the Square class to avoid unecessary duplication:
 ```
 class ColoredSquare extends Square {
