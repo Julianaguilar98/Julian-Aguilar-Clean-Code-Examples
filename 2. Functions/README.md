@@ -7,6 +7,7 @@ class Square {
     }
 
     length: number;
+}
 ```
 In the function quadrupleSquareSize we abstract the calculations of scaling the square.
 ```
