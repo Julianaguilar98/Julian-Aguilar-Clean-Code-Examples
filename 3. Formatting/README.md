@@ -5,32 +5,33 @@ Using the code from my Functions example, I removed all the whitespace and moved
 ## This is unformatted code.
 ```
 class Square {
-    constructor(length: number, width: number) {
-        this.length = length || 0;
-        this.width = width || 0;
-    }
+constructor(length: number, width:number) {
+    this.length  = length ||0;
+    this.width = width ||0;
+
+}
     length: number;
-        width: number;
-    quadrupleSquareSize(square: Square): Square {
-        const isTrueSquare = this.checkIfIsTrueSquare(square);
-        if (isTrueSquare) {
-          return this.scaleSquareSize(4, square);
-        } else {
+    width: number;
+    quadrupleSquareSize(square:Square): Square {
+        const isTrueSquare =  this.checkIfIsTrueSquare(square);
+        if (isTrueSquare){
+        return this.scaleSquareSize(4, square);
+        } else{
             return new Square(0, 0);
         }
     }
-    checkIfIsTrueSquare(square: Square): boolean {
+    checkIfIsTrueSquare(square: Square):boolean{
         return square.length === square.width;
     }
-        scaleSquareSize(multiplier: number, square: Square): Square {
-        return new Square(square.length * multiplier, square.width * multiplier);
-        }
+        scaleSquareSize(multiplier:number, square:Square):Square {
+        return new Square(square.length*multiplier, square.width * multiplier);
+    }
 }
-class Rectangle extends Square {
-constructor(length: number, width: number) {
-    super(length, width);
+class Rectangle extends Square{
+constructor(length: number,width:number) {
+    super(length,width);
 }
-checkIfIsRectangle(rectangle: Rectangle): boolean {
+checkIfIsRectangle(rectangle: Rectangle):boolean {
     return !this.checkIfIsTrueSquare(rectangle);
 }
 }
