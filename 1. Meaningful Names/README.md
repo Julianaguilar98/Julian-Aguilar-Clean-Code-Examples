@@ -1,3 +1,4 @@
+## Meaningful Names
 # Use Intent Revealing Names and Pronouncable Names
 ```
     initClose(): void {
