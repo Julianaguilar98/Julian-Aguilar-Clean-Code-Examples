@@ -37,6 +37,7 @@ checkIfIsRectangle(rectangle: Rectangle):boolean {
 }
 ```
 Indentation and proper line breaks are important for code readability.
+Smaller details such as proper spacing between types, brackets, and variable assignments are also very important. These small flaws add up.
 Using tools such as Prettier and ESLint are highly encouraged.
 
 ## This is the same code formatted using ESLint:
