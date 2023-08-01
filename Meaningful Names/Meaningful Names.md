@@ -20,7 +20,7 @@ initClose() is also not easily searchable or pronouncable.
     }
 ```
 
-#Method names should have verb or verb phrases
+# Method names should have verb or verb phrases
 ```
     attemptShutdown(): void {
         const id = this.getDeviceId();
@@ -30,7 +30,7 @@ initClose() is also not easily searchable or pronouncable.
     }
 ```
 
-#Pick one word per concept
+# Pick one word per concept
 Here we are using the verb "get" in these functions that return values.
 ```
     private getDeviceId(): number {
@@ -47,7 +47,7 @@ Here we are using the verb "get" in these functions that return values.
 
 ```
 
-#Don't add gratuitous content
+# Don't add gratuitous content
 ```
     private validateTheHandleIsNotEmpty(handle: string): boolean {
         return handle?.length > 0;
