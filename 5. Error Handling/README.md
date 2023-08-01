@@ -18,8 +18,9 @@ class App {
 ```
 Notice the initializeShutdown() function. This code is cleaner because it is not cluttered by the error handling.
 Write your Try-Catch-Finally statement first in order to leave the program in a consistent state no matter what happens within the try block.
-Seperation of concerns: The code for the device shutdown and the error handling are seperated.
 
+Seperation of concerns:
+The code for the device shutdown and the error handling are seperated.
 ```
     attemptShutdown(): void {
         const id = this.getDeviceId();
